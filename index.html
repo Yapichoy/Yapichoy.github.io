@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
   <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Exo:300,300i,400,400i,600,700" rel="stylesheet">
   <title>HTML5</title>
@@ -20,21 +21,64 @@
        <div class="container-fluid">
          <div class="row head">
            <h1>There is no other<br>platforms for you as like</h1>
-           <button>try now</button>
+           <button data-toggle="modal" data-target="#myModal">try now</button>
            <p>* No need add cards details</p>
          </div>
+         <div class = "modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Регистрация</h4>
+              </div>
+              <div class="modal-body">
+                <div class="form-horizontal" role ="form">
+                  <div class="form-group">
+                  <label for="inputLogin" class="col-sm-4 control-label">Логин</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" id = "inputLogin" placeholder="Логин">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-4 control-label">Email</label>
+                    <div class="col-sm-6 ">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword" class="col-sm-4 control-label">Пароль</label>
+                    <div class="col-sm-6">
+                      <input type="password" class="form-control" id="inputPassword" placeholder="Пароль">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword2" class="col-sm-4 control-label">Повторите ароль</label>
+                    <div class="col-sm-6">
+                      <input type="password" class="form-control" id="inputPassword2" placeholder="Повторите пароль">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-6">
+                    <button type="button" class="btn btn-success" data-dismiss="modal" aria-hidden="true">Зарегистрироваться</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
        </div>
     </header>
     <section class="Sect2">
       <div class="container">
         <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-5 col-sm-8">
               <h3>New design</h3>
               <h1>There is no other platforms<br>for you as like <span>...</span></h1>
               <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper.</p>
               <p class="otst">Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue.</p>
           </div>
-          <div class="col-md-offset-7"></div>
+          <div class="col-md-offset-7 col-sm-offset-4"></div>
           
         </div>
       </div>
@@ -67,7 +111,7 @@
     <section class="description">
       <div class="container">
         <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-5 left">
             <img src="img/description/mac.png" alt="">
           </div>
           <div class="col-md-5 col-md-offset-2 right">
@@ -131,10 +175,10 @@
           <h1>Over 1000 designer are using ...</h1>
         </div>
         <div class="row">
-          <div class="col-md-3"> <input type="text" placeholder="Full name"> </div>
-          <div class="col-md-3"><input type="email" placeholder="Your email"></div>
-          <div class="col-md-3"><input type="password" placeholder="Password"></div>
-          <div class="col-md-3">
+          <div class="col-lg-3"> <input type="text" placeholder="Full name"> </div>
+          <div class="col-lg-3"><input type="email" placeholder="Your email"></div>
+          <div class="col-lg-3"><input type="password" placeholder="Password"></div>
+          <div class="col-lg-3">
             <button>try now</button>
           </div>
         </div>
